@@ -158,6 +158,28 @@ a:visited {
         opacity: 1;
         }
 }
+@keyframes IntroLogoMobile{
+    0%{
+        -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
+        opacity: 0;
+        }
+    50%{
+        -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+        opacity: 1;
+        }
+    70%{
+        -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+        opacity: 1;
+        }
+    100%{
+        -ms-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+        opacity: 1;
+        }
+}
 @keyframes Intronav{
     0%{
         transform: rotate(xx) translateX(0%);
@@ -236,4 +258,42 @@ input[type=text], select, textarea {
   }
   label{
       color: #00FF10;
+  }
+
+  /* Responzivnost */
+
+  @media (max-width: 360px), (max-width: 411px), (max-width: 414px){
+    body{
+        overflow-x: hidden;
+    }  
+    .ascii{
+        font-size: 10px;
+        animation: IntroLogoMobile 2s forwards 1s ease;
+      }
+    .opis{
+        left: 10%;
+        top: 110%;
+    }
+    .social-icons{
+        top: 85%;
+    }
+    .nav{
+        font-size: 4em;
+    }
+    .nav-projects{
+        font-size: 4em;
+    }
+    .nav-contact{
+        font-size: 4em;
+    }
+    .projects{
+        margin-left: 10%;
+        margin-top: 190%;
+    }
+    .container{
+        width: 90%;
+        margin-left: 0;
+        margin-top: 200%;
+    }
+
   }
