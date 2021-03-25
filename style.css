@@ -262,7 +262,7 @@ input[type=text], select, textarea {
 
   /* Responzivnost */
 
-  @media (max-width: 360px), (max-width: 411px), (max-width: 414px){
+  @media screen and (max-width: 360px), (max-width: 320px), (max-width: 411px), (max-width: 414px), (max-width: 416px){
     body{
         overflow-x: hidden;
     }  
