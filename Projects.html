@@ -3,32 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
-    <title>MS / Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS - Projects</title>
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
 </head>
 <body>
-    <ol class="nav-projects">
-        <li class="link"><a href="index.html">Home</a></li>
-        <li class="link"><a href="Projects.html">Projects</a></li>
-        <li class="link"><a href="CV_english.pdf" target="_blank">CV</a></li>
-        <li class="link"><a href="Contact.html">Contact</a></li>
-      </ol>
-      <div>
-        <dl class="projects">
-            <dt>Page not finished!</dt>
-            <dt>C#</dt>
-            <dd><a href="#">Windows XP inspired UI simulator</a></dd>
-            <dt>HTML & CSS</dt>
-            <dd>...</dd>
-        </dl>
-      </div>
-      <div class="ikone">
-        <ul class="social-icons">
-            <li><a href="https://www.facebook.com/milorad.sivcevic.5/" target="_blank"><img src='icons/vectorpaint.svg' /></a></li>
-            <li><a href="https://www.instagram.com/lemi_x/" target="_blank"><img src='icons/vectorpaint (1).svg' /></a></li>
-        </ul>
+
+    <div class="grid-parent">
+        <div class="first"> 
+          <p class="status">v1.0</p>
+          <ol class="nav">
+            <li><a class="link" href="index.html">/Home</a></li>
+            <li><a class="link" href="Projects.html">/Projects</a></li>
+            <li><a class="link" href="CV_english.pdf" target="_blank">/Resume</a></li>
+            <li><a class="link" href="Contact.html">/Contact</a></li>
+          </ol>
+
+          <div class="ikone">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/milorad.sivcevic.5/" target="_blank"><img src='icons/vectorpaint.svg' /></a></li>
+                <li><a href="https://www.instagram.com/lemi_x/" target="_blank"><img src='icons/vectorpaint (1).svg' /></a></li>
+                <li><a href="https://github.com/Lemi4" target="_blank"><img src='icons/github.svg'/></a></li>
+            </ul>
+        </div>
+
+        <div class="mouse_scroll">
+
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="m_scroll_arrows unu"></span>
+                <span class="m_scroll_arrows doi"></span>
+                <span class="m_scroll_arrows trei"></span>
+            </div>
+        </div> 
+
+        </div>
+
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="secondp">
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('nature')"> Web designs</button>
+                <button class="btn" onclick="filterSelection('cars')"> c# projects</button>
+                <!-- <button class="btn" onclick="filterSelection('people')"> People</button> -->
+              </div>
+
+         <div class="elements">
+            <div class="column nature">
+            <a href="https://github.com/Lemi4/Frondend-Mentor-Challenges/tree/main/blogr-landing-page-main" target="_blank">
+            <div class="content">
+                <h4>blogr landing page main</h4>
+                <p>Landing page project from: frontendmentor</p>
+            </div>
+            </a>
+            </div>
+            <div class="column nature">
+            <a href="https://github.com/Lemi4/Frondend-Mentor-Challenges/tree/main/3-column-preview-card-component-main" target="_blank">
+            <div class="content">
+                <h4>3 column preview card component</h4>
+                <p>3 columns project from: frontendmentor</p>
+            </div>
+            </a>
+            </div>
+          
+        
+            <div class="column cars">
+            <a href="https://github.com/Lemi4/cSharp-Projects/tree/main/OSS" target="_blank">
+            <div class="content">
+                
+                <h4>OSS</h4>
+                <p>Simulating a windows system in a small c# program</p>
+
+            </div>
+            </a>
+            </div>
+
+<!--         
+            <div class="column people">
+            <div class="content">
+                <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+                <h4>Girl</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            </div>
+            <div class="column people">
+            <div class="content">
+                <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+                <h4>Man</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            </div>
+            <div class="column people">
+            <div class="content">
+                <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+            </div> -->
+        <!-- END GRID -->
+        </div>
     </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

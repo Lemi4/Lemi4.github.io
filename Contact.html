@@ -3,45 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
-    <title>MS / Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS - Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
 </head>
 <body>
-    <ol class="nav-contact">
-        <li class="link"><a href="index.html">Home</a></li>
-        <li class="link"><a href="Projects.html">Projects</a></li>
-        <li class="link"><a href="CV_english.pdf" target="_blank">CV</a></li>
-        <li class="link"><a href="Contact.html">Contact</a></li>
+
+
+  <div class="grid-parent">
+    <div class="first"> 
+      <p class="status">v1.0</p>
+      <ol class="nav">
+        <li><a class="link" href="index.html">/Home</a></li>
+        <li><a class="link" href="Projects.html">/Projects</a></li>
+        <li><a class="link" href="CV_english.pdf" target="_blank">/Resume</a></li>
+        <li><a class="link" href="Contact.html">/Contact</a></li>
       </ol>
 
-
-      <div class="container">
-        <form action="https://formspree.io/f/xbjpnzjp" method="POST">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-          
-          <label for="lname">Email</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your email address.." required required>
-
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
-      </div>
-      
       <div class="ikone">
         <ul class="social-icons">
             <li><a href="https://www.facebook.com/milorad.sivcevic.5/" target="_blank"><img src='icons/vectorpaint.svg' /></a></li>
             <li><a href="https://www.instagram.com/lemi_x/" target="_blank"><img src='icons/vectorpaint (1).svg' /></a></li>
+            <li><a href="https://github.com/Lemi4" target="_blank"><img src='icons/github.svg'/></a></li>
         </ul>
     </div>
+
+    <div class="mouse_scroll">
+
+      <div class="mouse">
+          <div class="wheel"></div>
+      </div>
+      <div>
+          <span class="m_scroll_arrows unu"></span>
+          <span class="m_scroll_arrows doi"></span>
+          <span class="m_scroll_arrows trei"></span>
+      </div>
+  </div> 
+
+    </div>
+
+    <div class="second">
+      <div class="container">
+        <form action="https://formspree.io/f/xbjpnzjp" method="POST">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="lname">Email</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your email address.." required required>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit" onClick="window.location.reload();">
+      
+        </form>
+      </div>
+    </div>
+</div>
+
+      
+      
 </body>
 </html>

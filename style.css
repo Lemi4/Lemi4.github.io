@@ -1,220 +1,102 @@
-
 html{
     padding: 0;
     margin: 0;
     font-family: 'Hack';
     background-color: black;
     font-family: Hack, monospace;
+    color: #00FF10;
 }
+.grid-parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    
+}
+
 .status{
-    left: 20px;
-    position: absolute;
     color: #00FF10;
 }
 .ascii{
-    opacity: 0;
-    position: relative;
+    margin-top: 20%;
+    grid-column: drugideo;
     font-family: monospace;
     white-space: pre;
     color: #00FF10;
-    font-size: 15px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 48%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    animation: IntroLogo 2s forwards 1s ease;
+    font-size: 1em;
+    
 }
-.ascii p{
-    padding: 0;
-    margin: 0;
+.opis{
+    margin-left: 8%;
+    grid-column: drugideo;
+    opacity: 1;
+    color: #00FF10;
+    font-size: 30px;
+    
 }
-/* navigation */
-
 .nav{
-    opacity: 0;
-    animation: Intronav 1.5s forwards 2.5s linear;
-   position: absolute;
-   top: 25%;
-   font-size: 5em;
+    width: 45%;
+    margin-left: 2%;
+    opacity: 1;
+   font-size: 4.5em;
    color: #00FF10;
-}
-.nav-projects{
-    opacity: 0;
-    animation: Intronav 1.5s forwards 0s linear;
-   position: absolute;
-   top: 25%;
-   font-size: 5em;
-   color: #00FF10;
-}
-.nav-contact{
-    opacity: 0;
-    animation: Intronav 1.5s forwards 0s linear;
-   position: absolute;
-   top: 25%;
-   font-size: 5em;
-   color: #00FF10;
+   margin-top: 25%;
+   border-right: 1px solid #00FF10;
 }
 ol {
-  animation: IntroNav 1.5s 0s ease;
-  margin: 0;
-  padding: 0;
-  margin-left: 2%;
-}
-
-li a {
-    padding-top: 10px;
-    display: block;
-    text-decoration: none;
-    color: #00FF10;
-}
-a:visited { 
+    animation: IntroNav 1.5s 0s ease;
+    margin: 0;
+    padding: 0;
+   
+  }
+  li a {
+      display: inline-block;
+      text-decoration: none;
+      color: #00FF10;
+  }
+  a:visited { 
     color: #00FF10; 
 }
-
-.link:after{
-    content: '';
-    position: absolute;
-    width: 0; height: 3px;
-    display: block;
-    margin-top: 2px;
-    right: 0;
-    background: #00FF10;
-    transition: width .2s forwards ease;
-    -webkit-transition: width .2s ease;
-  }
-   
-  .link:hover:after{
-    width: 100%;
-    left: 0;
-    background: #00FF10;
-  }
-
-  .opis{
-      opacity: 0;
-      color: #00FF10;
-      position: absolute;
-      top: 45%;
-      left: 64%;
-      font-size: 30px;
-      animation: IntroOpis 1.5s forwards 3s linear;
-  }
-  .projects{
-      color: #00FF10; 
-      position: relative;
-      margin-top: 14%;
-      margin-left: 40%;
-      
-  }
-  dt{
-      padding: 15px;
-  }
-
-
-
-  .social-icons {
-      position: absolute;
-      top: 67%;
-      left: 5%;
-      animation: Intronav 1.5s forwards 2.5s linear;
-      opacity: 0;
-    }  
-  .social-icons li {
-    display:inline-block;
-    list-style-type:none;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    }
-  .social-icons li a {
-    border-bottom: none;
-    }
-  .social-icons li img {
-    width:40px;
-    height:40px;
-    margin-right: 20px;
-  }
-
-/* animacije */
-@keyframes IntroLogo{
-    0%{
-        -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -60%);
-        opacity: 0;
-        }
-    50%{
-        -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-        opacity: 1;
-        }
-    70%{
-        -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-        opacity: 1;
-        }
-    100%{
-        -ms-transform: translate(30%, -110%);
-        transform: translate(30%, -110%);
-        opacity: 1;
-        }
-}
-@keyframes IntroLogoMobile{
-    0%{
-        -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -60%);
-        opacity: 0;
-        }
-    50%{
-        -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-        opacity: 1;
-        }
-    70%{
-        -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-        opacity: 1;
-        }
-    100%{
-        -ms-transform: translate(50%, -50%);
-        transform: translate(50%, -50%);
-        opacity: 1;
-        }
-}
-@keyframes Intronav{
-    0%{
-        transform: rotate(xx) translateX(0%);
-        opacity: 0;
-        }
-    50%{
-        transform: rotate(xx) translateX(0%);
-        opacity: 0.5;
-        }
-    100%{
-        transform: rotate(xx) translateX(0%);
-        opacity: 1;
-        }
-}
-@keyframes IntroOpis{
-    0%{
-        transform: rotate(xx) translateX(0%);
-        opacity: 0;
-        }
-    50%{
-        transform: rotate(xx) translateX(0%);
-        opacity: 0.5;
-        }
-    100%{
-        transform: rotate(xx) translateX(0%);
-        opacity: 1;
-        }
+.projects{
+    margin-top: 30%;
 }
 
+.social-icons {
+    grid-column: prvideo;
+    animation: Intronav 1.5s forwards 2.5s linear;
+    opacity: 1;
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:40px;
+  height:40px;
+  margin-right: 20px;
+}
+
+.elements{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  
+}
+#myBtnContainer{
+  flex-basis: 100%;
+  margin-top: 20%;
+}
+.elements > div{
+  border: #00FF10 solid 1px;
+}
 
 
 
 /* kontakt forma */
 
-/* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; 
     padding: 12px; 
@@ -250,50 +132,297 @@ input[type=text], select, textarea {
     color: #00FF10;
   }
   .container {
-      width: 30%;
-      margin-left: 50%;
-      margin-top: 10%;
-    border-radius: 5px;
-    padding: 20px;
+      width: auto;
+      margin-top: 25%;
+      margin-right: 20vw;
   }
   label{
       color: #00FF10;
   }
 
-  /* Responzivnost */
+  /* animacije */
 
-  @media screen and (max-width: 360px), (max-width: 320px), (max-width: 411px), (max-width: 414px), (max-width: 416px){
-    body{
-        overflow-x: hidden;
-    }  
-    .ascii{
-        font-size: 10px;
-        animation: IntroLogoMobile 2s forwards 1s ease;
-      }
-    .opis{
-        left: 10%;
-        top: 110%;
-    }
-    .social-icons{
-        top: 85%;
-    }
-    .nav{
-        font-size: 4em;
-    }
-    .nav-projects{
-        font-size: 4em;
-    }
-    .nav-contact{
-        font-size: 4em;
-    }
-    .projects{
-        margin-left: 10%;
-        margin-top: 190%;
-    }
-    .container{
-        width: 90%;
-        margin-left: 0;
-        margin-top: 200%;
-    }
-
+  
+.link:after{
+    content: '';
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 2px;
+    right: 0;
+    background: #00FF10;
+    transition: width .2s forwards ease;
+    -webkit-transition: width .2s ease;
   }
+   
+  .link:hover:after{
+    width: 100%;
+    left: 0;
+    background: #00FF10;
+  }
+
+
+  /* responzivnost */
+
+  @media(max-width: 1787px){
+    .nav{
+      border-right: 0;
+     
+    }
+  }
+  @media(max-width: 816px){
+    
+    .mouse_scroll{
+      display: block !important;
+    }
+  }
+
+
+
+
+
+
+
+  
+  /* Center website */
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+
+    display: none; /* Hide columns by default */
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: grid;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    width: 250px;
+    padding-right: 100px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: solid 1px #00FF10;
+    outline: none;
+    padding: 12px 16px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #00FF10;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #00FF10;
+    color: black;
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: #00FF10;
+     color: black;
+  }
+
+
+
+/* scroll */
+
+
+
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+
+.mouse_scroll {
+  display: none;
+	position: relative;
+	margin: 0 auto;
+  left: 220px;
+	height: 50px;
+	top: 25px;
+}
+
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  
+  margin-top: -6px;
+}
+
+.mouse {
+  height: 42px;
+  width: 24px;
+  border-radius: 14px;
+  transform: none;
+  border: 2px solid white;
+  top: 170px;
+}
+
+.wheel {
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+  
+  height: 4px;
+  width: 4px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+
+.wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
+  animation: mouse-wheel 0.6s linear infinite;
+}
+
+@-webkit-keyframes mouse-wheel{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@-o-keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+@keyframes mouse-wheel {
+
+   0% { top: 1px; }
+  25% { top: 2px; }
+  50% { top: 3px;}
+  75% { top: 2px;}
+  100% { top: 1px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
